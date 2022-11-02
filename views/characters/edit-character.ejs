@@ -1,0 +1,16 @@
+<form method="POST" action="/characters/<%= character.id %>/update">
+  <label
+    >Name: <input type="text" name="name" value="<%= character.name %> "
+  /></label>
+  <label
+    >Occupation:
+    <input type="text" name="occupation" value="<%= character.occupation %> "
+  /></label>
+  <label
+    >Weapon: <input type="text" name="weapon" value="<%= character.weapon %> "
+  /></label>
+  <label
+    >Debt: <input type="text" name="debt" value="<%- character.debit %> "
+  /></label>
+  <button type="submit">Update</button>
+</form>
